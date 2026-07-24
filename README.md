@@ -116,13 +116,13 @@ flashcards.db
 
 ## 📸 Screenshots
 ### Home Screen
-![Home Screen](screnshots/home_screen.png)
+![Home Screen](screenshots/home_screen.png)
 
 ### Add Flashcards
-![Add Flashcards](sreenshots/add_flashcards.png)
+![Add Flashcards](screenshots/add_flashcards.png)
 
 ### Study Flashcards
-![Study Flashcard](study_flashcard.png)
+![Study Flashcard](screenshots/study_flashcard.png)
 
 ---
 
