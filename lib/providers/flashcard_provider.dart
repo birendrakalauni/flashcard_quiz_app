@@ -10,6 +10,7 @@ class FlashcardProvider extends ChangeNotifier {
 
   Future loadFlashcards() async {
     _flashcards = await DatabaseHelper.instance.getFlashcards();
+    print(_flashcards);
     notifyListeners();
   }
 

@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/flashcard_provider.dart';
 import 'add_flashcard_screen.dart';
 import 'flashcard_screen.dart';
+import 'edit_flashcard_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -67,15 +68,32 @@ class HomeScreen extends StatelessWidget {
                   },
 
                   // DELETE BUTTON
-                  trailing: IconButton(
-                    icon: const Icon(Icons.delete, color: Colors.red),
-                    onPressed: () async {
-                      await provider.deleteFlashcard(flashcard.id!);
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        icon: const Icon(Icons.edit, color: Colors.blue),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                  EditFlashcardScreen(flashcard: flashcard),
+                            ),
+                          );
+                        },
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.delete, color: Colors.red),
+                        onPressed: () async {
+                          await provider.deleteFlashcard(flashcard.id!);
 
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Flashcard deleted')),
-                      );
-                    },
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text('Flashcard deleted')),
+                          );
+                        },
+                      ),
+                    ],
                   ),
                 ),
               );
