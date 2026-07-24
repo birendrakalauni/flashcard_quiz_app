@@ -21,6 +21,7 @@ The primary goal of this project is to practice Flutter development, state manag
 - ✅ Show and hide answers
 - ✅ Navigate through flashcards (Next & Previous)
 - ✅ Delete flashcards
+- ✅ Edit existing flashcards
 - ✅ Offline data storage using SQLite
 - ✅ State management using Provider
 - ✅ Simple and clean Material Design interface
@@ -29,7 +30,6 @@ The primary goal of this project is to practice Flutter development, state manag
 
 ## 🚧 Planned Features
 
-- ✏️ Edit existing flashcards
 - 🔍 Search flashcards
 - 📂 Categories and subjects
 - ⭐ Favorite flashcards
